@@ -818,3 +818,5 @@
 2024-05-20 14:23:55 [33mwarn[39m: Login failed: User not found
 2024-05-20 14:24:02 [32minfo[39m: LoginUser endpoint called for:
 2024-05-20 14:24:02 [33mwarn[39m: Login failed: User not found
+2024-05-20 17:43:21 [32minfo[39m: Server started on port 5001
+2024-05-20 17:43:21 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
