@@ -1,0 +1,26 @@
+2024-05-16 19:18:17 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 19:18:55 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 19:33:06 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 21:24:12 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 21:24:21 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 21:24:51 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 21:38:22 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-16 21:38:51 [31merror[39m: Internal server error: Error: Unknown authentication strategy "jwt"
+2024-05-17 16:29:17 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-17 16:37:16 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-17 16:41:03 [31merror[39m: Error retrieving question: CastError: Cast to ObjectId failed for value "recent" (type string) at path "_id" for model "Question"
+2024-05-17 20:40:33 [31merror[39m: Error retrieving question: Cast to ObjectId failed for value "QUESTION_ID" (type string) at path "_id" for model "Question"
+2024-05-19 17:46:52 [31merror[39m: Error registering user: User validation failed: name: Name is required
+2024-05-20 11:06:03 [31merror[39m: MongoDB connection error: MongooseServerSelectionError
+2024-05-20 11:12:47 [31merror[39m: MongoDB connection error: MongooseServerSelectionError
+2024-05-20 11:20:51 [31merror[39m: MongoDB connection error: MongooseServerSelectionError
+2024-05-20 11:25:40 [31merror[39m: MongoDB connection error: MongooseServerSelectionError
+2024-05-20 13:39:53 [31merror[39m: Error retrieving question: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Question"
+2024-05-20 13:41:44 [31merror[39m: Error retrieving question: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Question"
+2024-05-20 13:46:39 [31merror[39m: Error retrieving question: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Question"
+2024-05-20 13:48:28 [31merror[39m: Error retrieving question: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Question"
+2024-05-20 14:07:39 [31merror[39m: Error retrieving question: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Question"
+2024-05-20 14:10:40 [31merror[39m: Error registering user:
+2024-05-20 14:13:41 [31merror[39m: Error registering user:
+2024-05-20 14:14:48 [31merror[39m: Error registering user:
+2024-05-20 14:16:05 [31merror[39m: Error registering user:

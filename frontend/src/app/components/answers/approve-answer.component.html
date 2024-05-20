@@ -1,0 +1,38 @@
+<!-- src/app/components/answers/approve-answer.component.html -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="http://localhost:4200/search-question">Search Question</a>
+    <a href="http://localhost:4200/post-question">Post Question</a>
+    <a href="http://localhost:4200/answer-question">Answer Question</a>
+    <a href="http://localhost:4200/approve-answer">Approve Answer</a>
+    <a href="http://localhost:4200/rate-answer">Rate Answer</a>
+    <a href="http://localhost:4200/upvote-answer">Upvote Answer</a>
+    <a href="http://localhost:4200/comment-answer">Comment on Answer</a>
+  </div>
+</nav>
+
+<header class="header">
+  <h1>Welcome to My QnA App</h1>
+</header>
+
+<div class="container">
+  <h2>Approve an Answer</h2>
+  <form [formGroup]="approveForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="answerId">Answer ID</label>
+      <input id="answerId" formControlName="answerId" class="form-control" placeholder="Enter the answer ID">
+    </div>
+    <div class="form-group">
+      <label for="approvalStatus">Approval Status</label>
+      <select id="approvalStatus" formControlName="approvalStatus" class="form-control">
+        <option value="approved">Approved</option>
+        <option value="unapproved">Unapproved</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Approve Answer</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 WT QnA App. All rights reserved.</p>
+</footer>

@@ -1,0 +1,40 @@
+<!-- src/app/components/questions/search-question.component.html -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="http://localhost:4200/search-question">Search Question</a>
+    <a href="http://localhost:4200/post-question">Post Question</a>
+    <a href="http://localhost:4200/answer-question">Answer Question</a>
+    <a href="http://localhost:4200/approve-answer">Approve Answer</a>
+    <a href="http://localhost:4200/rate-answer">Rate Answer</a>
+    <a href="http://localhost:4200/upvote-answer">Upvote Answer</a>
+    <a href="http://localhost:4200/comment-answer">Comment on Answer</a>
+  </div>
+</nav>
+
+<header class="header">
+  <h1>Welcome to My QnA App</h1>
+</header>
+
+<div class="container">
+  <h2>Search for a Question</h2>
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Search Title</label>
+      <input id="title" formControlName="title" class="form-control" placeholder="Enter the question title">
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+  <div *ngIf="results.length > 0">
+    <h3>Search Results</h3>
+    <ul class="search-results">
+      <li *ngFor="let question of results">
+        {{ question.title }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 WT QnA App. All rights reserved.</p>
+</footer>

@@ -1,0 +1,43 @@
+{
+  "name": "angular_03",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "ngrok": "ngrok http 4200"
+
+  },
+  "dependencies": {
+    "@angular/animations": "16.2.12",
+    "@angular/common": "16.2.12",
+    "@angular/compiler": "16.2.12",
+    "@angular/core": "16.2.12",
+    "@angular/forms": "16.2.12",
+    "@angular/localize": "16.2.12",
+    "@angular/platform-browser": "16.2.12",
+    "@angular/platform-browser-dynamic": "16.2.12",
+    "@angular/router": "16.2.12",
+    "@nguniversal/builders": "16.2.0",
+    "@nguniversal/express-engine": "16.2.0",
+    "bootstrap": "^5.3.3",
+    "classlist.js": "^1.1.20150312",
+    "core-js": "^3.37.1",
+    "rxjs": "^7.8.0",
+    "web-animations-js": "^2.3.2",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "16.2.14",
+    "@angular/cli": "16.2.12",
+    "@angular/compiler-cli": "16.2.12",
+    "@babel/plugin-transform-async-generator-functions": "^7.20.0",
+    "@babel/plugin-transform-unicode-property-regex": "^7.18.6",
+    "@npmcli/fs": "^2.0.1",
+    "@types/node": "^20.12.12",
+    "ngrok": "^5.0.0-beta.2",
+    "typescript": "4.9.5"
+  }
+}

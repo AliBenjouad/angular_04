@@ -1,0 +1,93 @@
+/Users/ali/Desktop/angular_03/frontend
+├── src
+│   ├── app
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.config.server.ts
+│   │   ├── app.config.ts
+│   │   ├── app.routes.ts
+│   │   ├── app.server.module.ts
+│   │   ├── components
+│   │   │   ├── answers
+│   │   │   │   ├── answers.component.css
+│   │   │   │   ├── answers.component.html
+│   │   │   │   ├── answers.component.spec.ts
+│   │   │   │   └── answers.component.ts
+│   │   │   ├── auth
+│   │   │   │   ├── auth.component.css
+│   │   │   │   ├── auth.component.html
+│   │   │   │   ├── auth.component.spec.ts
+│   │   │   │   └── auth.component.ts
+│   │   │   ├── comments
+│   │   │   │   ├── comments.component.css
+│   │   │   │   ├── comments.component.html
+│   │   │   │   ├── comments.component.spec.ts
+│   │   │   │   └── comments.component.ts
+│   │   │   ├── questions
+│   │   │   │   ├── questions.component.css
+│   │   │   │   ├── questions.component.html
+│   │   │   │   ├── questions.component.spec.ts
+│   │   │   │   └── questions.component.ts
+│   │   │   ├── not-found
+│   │   │   │   ├── not-found.component.ts
+│   │   │   │   ├── not-found.component.html
+│   │   │   │   └── not-found.component.css
+│   │   ├── services
+│   │   │   ├── answer.service.spec.ts
+│   │   │   ├── answer.service.ts
+│   │   │   ├── auth.service.spec.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── comment.service.spec.ts
+│   │   │   ├── comment.service.ts
+│   │   │   ├── question.service.spec.ts
+│   │   │   └── question.service.ts
+│   ├── environments
+│   │   ├── environment.ts
+│   │   └── environment.prod.ts
+│   ├── assets
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.server.ts
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles
+│   │   └── bootstrap.min.css.map
+│   └── styles.css
+├── angular.json
+├── package-lock.json
+├── package.json
+├── proxy.conf.json
+├── README.md
+└── server
+    ├── config
+    │   ├── database.js
+    │   └── passport.js
+    ├── controllers
+    │   ├── answerController.js
+    │   ├── commentController.js
+    │   ├── questionController.js
+    │   └── userController.js
+    ├── logs
+    │   ├── combined.log
+    │   ├── error.log
+    │   └── exceptions.log
+    ├── models
+    │   ├── Answer.js
+    │   ├── Comment.js
+    │   ├── Profile.js
+    │   ├── Question.js
+    │   └── User.js
+    ├── package-lock.json
+    ├── package.json
+    ├── routes
+    │   ├── answers.js
+    │   ├── comments.js
+    │   ├── questions.js
+    │   └── users.js
+    ├── server.js
+    └── utils
+        ├── logger.js
+        └── validation.js

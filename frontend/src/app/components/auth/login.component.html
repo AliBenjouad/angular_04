@@ -1,0 +1,17 @@
+<!-- src/app/components/auth/login.component.html -->
+<div class="container">
+  <h1>Login</h1>
+  <form (ngSubmit)="onLogin($event)">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="user.email" name="email" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" [(ngModel)]="user.password" name="password" required class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+  <button (click)="onRegister()" class="btn btn-secondary mt-3">Register</button>
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>
