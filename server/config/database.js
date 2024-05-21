@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const logger = require('../utils/logger'); // Import custom logger for logging database operations.
+require('dotenv').config(); // Load environment variables from .env file
 
 // Importing the models
 require('../models/User'); // Ensure the models are loaded and registered with Mongoose
@@ -10,8 +11,11 @@ require('../models/Comment');
 // Async function to establish a connection to MongoDB.
 const connectDB = async () => {
   try {
+    // Use the MongoDB connection string from environment variables
+    const dbURI = process.env.MONGODB_URI;
+
     // Attempt to connect to the MongoDB database without deprecated options.
-    await mongoose.connect('mongodb://localhost/angularDB', {
+    await mongoose.connect(dbURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
@@ -25,7 +29,4 @@ const connectDB = async () => {
   }
 };
 
-module.exports = {
-  database: 'mongodb://localhost:27017/yourdatabase', // Replace with your database URL
-  secret: 'root' 
-};
+module.exports = connectDB;
