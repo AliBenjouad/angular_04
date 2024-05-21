@@ -1,10 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const { check } = require('express-validator');
 const questionController = require('../controllers/questionController');
 const passport = require('passport');
 
-// Create a new question
-router.post('/', passport.authenticate('jwt', { session: false }), questionController.createQuestion);
+router.post('/', 
+  passport.authenticate('jwt', { session: false }),
+  [check('title', 'Title is required').not().isEmpty(), check('body', 'Body is required').not().isEmpty()],
+  questionController.createQuestion
+);
 
 // Get all questions
 router.get('/', questionController.getQuestions);

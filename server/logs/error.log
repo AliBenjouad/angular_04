@@ -24,3 +24,28 @@
 2024-05-20 14:13:41 [31merror[39m: Error registering user:
 2024-05-20 14:14:48 [31merror[39m: Error registering user:
 2024-05-20 14:16:05 [31merror[39m: Error registering user:
+2024-05-21 15:46:09 [31merror[39m: SyntaxError: Unexpected token ''', "'{username:" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-05-21 16:01:23 [31merror[39m: SyntaxError: Unexpected token ''', "'{title:" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-05-21 16:40:38 [31merror[39m: Error adding answer: Cast to ObjectId failed for value "QUESTION_ID" (type string) at path "_id" for model "Question"

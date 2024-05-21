@@ -1,8 +1,14 @@
 const Question = require('../models/Question');
 const logger = require('../utils/logger');
+const { validationResult } = require('express-validator');
 
-// Function to create a new question
 exports.createQuestion = async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    logger.warn('Validation errors:', errors.array());
+    return res.status(400).json({ errors: errors.array() });
+  }
+
   logger.info('Creating new question');
   try {
     const newQuestion = new Question({
@@ -15,12 +21,11 @@ exports.createQuestion = async (req, res) => {
     logger.info('Question created successfully');
     res.json(question);
   } catch (err) {
-    logger.error('Error creating question: ' + err.message);
+    logger.error('Error creating question:', err);
     res.status(500).send('Server Error');
   }
 };
 
-// Function to retrieve all questions
 exports.getQuestions = async (req, res) => {
   logger.info('Retrieving all questions');
   try {
@@ -28,7 +33,7 @@ exports.getQuestions = async (req, res) => {
     logger.info('Questions retrieved successfully');
     res.json(questions);
   } catch (err) {
-    logger.error('Error retrieving questions: ' + err.message);
+    logger.error('Error retrieving questions:', err);
     res.status(500).send('Server Error');
   }
 };

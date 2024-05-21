@@ -820,3 +820,86 @@
 2024-05-20 14:24:02 [33mwarn[39m: Login failed: User not found
 2024-05-20 17:43:21 [32minfo[39m: Server started on port 5001
 2024-05-20 17:43:21 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 15:44:34 [32minfo[39m: Server started on port 5001
+2024-05-21 15:44:34 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 15:46:09 [31merror[39m: SyntaxError: Unexpected token ''', "'{username:" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-05-21 15:47:56 [32minfo[39m: Server started on port 5001
+2024-05-21 15:47:56 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 15:47:58 [32minfo[39m: RegisterUser endpoint called with data:
+2024-05-21 15:47:58 [33mwarn[39m: Registration failed: Username already exists
+2024-05-21 15:49:07 [32minfo[39m: RegisterUser endpoint called with data:
+2024-05-21 15:49:07 [32minfo[39m: User registered successfully:
+2024-05-21 15:55:55 [32minfo[39m: Server started on port 5001
+2024-05-21 15:55:55 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 15:55:58 [32minfo[39m: LoginUser endpoint called for:
+2024-05-21 15:55:58 [32minfo[39m: User logged in successfully:
+2024-05-21 16:01:23 [31merror[39m: SyntaxError: Unexpected token ''', "'{title:" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Users\Pc User\Desktop\angular_04\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Pc User\Desktop\angular_04\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-05-21 16:02:35 [32minfo[39m: Server started on port 5001
+2024-05-21 16:02:35 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 16:03:33 [32minfo[39m: LoginUser endpoint called for:
+2024-05-21 16:03:33 [32minfo[39m: User logged in successfully:
+2024-05-21 16:10:33 [32minfo[39m: Server started on port 5001
+2024-05-21 16:10:33 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 16:10:50 [32minfo[39m: Attempting to authenticate user
+2024-05-21 16:10:50 [33mwarn[39m: No user found with given ID
+2024-05-21 16:11:20 [32minfo[39m: LoginUser endpoint called for:
+2024-05-21 16:11:20 [32minfo[39m: User logged in successfully:
+2024-05-21 16:14:39 [32minfo[39m: Attempting to authenticate user
+2024-05-21 16:14:39 [33mwarn[39m: No user found with given ID
+2024-05-21 16:18:40 [32minfo[39m: Server started on port 5001
+2024-05-21 16:18:40 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 16:18:48 [32minfo[39m: LoginUser endpoint called for:
+2024-05-21 16:18:48 [32minfo[39m: User logged in successfully:
+2024-05-21 16:19:41 [32minfo[39m: User found during authentication
+2024-05-21 16:19:41 [32minfo[39m: Creating new question
+2024-05-21 16:19:42 [32minfo[39m: Attempting to save question: How to improve API security?
+2024-05-21 16:19:42 [32minfo[39m: New question posted: How to improve API security?
+2024-05-21 16:19:42 [32minfo[39m: Question created successfully
+2024-05-21 16:24:04 [32minfo[39m: Server started on port 5001
+2024-05-21 16:24:04 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 16:24:06 [32minfo[39m: Retrieving all questions
+2024-05-21 16:24:06 [32minfo[39m: Questions retrieved successfully
+2024-05-21 16:37:56 [32minfo[39m: Server started on port 5001
+2024-05-21 16:37:56 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 16:38:05 [32minfo[39m: RegisterUser endpoint called with data:
+2024-05-21 16:38:05 [32minfo[39m: User registered successfully:
+2024-05-21 16:39:25 [32minfo[39m: Server started on port 5001
+2024-05-21 16:39:25 [32minfo[39m: Connected to database mongodb://localhost:27017/yourdatabase
+2024-05-21 16:39:32 [32minfo[39m: JWT Payload:
+2024-05-21 16:39:32 [32minfo[39m: User found during authentication
+2024-05-21 16:40:20 [32minfo[39m: JWT Payload:
+2024-05-21 16:40:20 [32minfo[39m: User found during authentication
+2024-05-21 16:40:20 [32minfo[39m: Creating new question
+2024-05-21 16:40:20 [32minfo[39m: Attempting to save question: How to improve API security?
+2024-05-21 16:40:20 [32minfo[39m: New question posted: How to improve API security?
+2024-05-21 16:40:20 [32minfo[39m: Question created successfully
+2024-05-21 16:40:24 [32minfo[39m: Retrieving all questions
+2024-05-21 16:40:24 [32minfo[39m: Questions retrieved successfully
+2024-05-21 16:40:30 [32minfo[39m: Retrieving all questions
+2024-05-21 16:40:30 [32minfo[39m: Questions retrieved successfully
+2024-05-21 16:40:38 [32minfo[39m: JWT Payload:
+2024-05-21 16:40:38 [32minfo[39m: User found during authentication
+2024-05-21 16:40:38 [32minfo[39m: Adding answer to question ID QUESTION_ID
+2024-05-21 16:40:38 [31merror[39m: Error adding answer: Cast to ObjectId failed for value "QUESTION_ID" (type string) at path "_id" for model "Question"

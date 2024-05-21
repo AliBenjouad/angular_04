@@ -7,7 +7,7 @@ exports.registerUser = async (req, res) => {
   logger.info('RegisterUser endpoint called with data:', req.body);
   try {
     // Validate input fields
-    if (!req.body.username || !req.body.email || !req.body.password) {
+    if (!req.body.username || !req.body.email || !req.body.password || !req.body.role) {
       logger.warn('Registration failed: Missing required fields');
       return res.status(400).json({ error: 'Missing required fields' });
     }
@@ -31,7 +31,8 @@ exports.registerUser = async (req, res) => {
       name: req.body.name,
       email: req.body.email,
       username: req.body.username,
-      password: req.body.password
+      password: req.body.password,
+      role: req.body.role // Add the role here
     });
 
     // Hash password before saving
@@ -66,7 +67,7 @@ exports.loginUser = async (req, res) => {
       user: {
         id: user.id,
         name: user.name,
-        role: user.role
+        role: user.role // Include the role in the payload
       }
     };
 
