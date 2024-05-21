@@ -11,6 +11,7 @@ import { UpvoteAnswerComponent } from './components/answers/upvote-answer.compon
 import { SearchQuestionComponent } from './components/questions/search-question.component';
 import { CommentAnswerComponent } from './components/comments/comment-answer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import {HomeComponent} from "./components/home/home.component";
 
 // Define the routes for the application
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'upvote-answer', component: UpvoteAnswerComponent }, // Route for upvoting an answer
   { path: 'search-question', component: SearchQuestionComponent }, // Route for searching for a question
   { path: 'comment-answer', component: CommentAnswerComponent }, // Route for commenting on an answer
+  { path: 'home', component: HomeComponent }, // Route for the home page
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Default route, redirects to login page
   { path: '**', component: NotFoundComponent } // Wildcard route for handling 404 (not found) errors
 ];
