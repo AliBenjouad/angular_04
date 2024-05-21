@@ -1,0 +1,83 @@
+.content {
+  background-color: #0B1416;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.content .navbar-container {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.login-button, .register-button {
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-button:hover, .register-button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.login-button {
+  margin-right: 10px;
+}
+
+.searchbar {
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: #333D42;
+  color: white;
+  border: none;
+  margin-left: 4vw;
+}
+
+.separator {
+  width: 98%;
+  margin: auto;
+  height: 1px;
+  background-color: #646464;
+}
+
+.main-content {
+  margin-top: 4vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content h1 {
+  margin-bottom: 4vh;
+}
+
+.post {
+  margin-top: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #646464;
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}

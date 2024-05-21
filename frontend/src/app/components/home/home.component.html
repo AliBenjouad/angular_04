@@ -1,0 +1,46 @@
+<div class="content">
+  <div class="navbar-container">
+    <a href="http://localhost:4200/home">
+      <img src="assets/logo.png" alt="logo" class="logo">
+    </a>
+    <input id="searchbar" class="searchbar" type="text" name="search" placeholder="Search a post">
+    <div class="button-container">
+      <a href="http://localhost:4200/login">
+        <input type="button" value="Login" class="login-button">
+      </a>
+      <a href="http://localhost:4200/register">
+        <input type="button" value="Register" class="register-button">
+      </a>
+    </div>
+  </div>
+  <div class="separator"></div>
+  <div class="main-content">
+    <h1>Posts</h1>
+
+<!--    <div class="post" *ngFor="let post of posts">-->
+<!--      <h2>{{ post.title }}</h2>-->
+<!--      <p>{{ post.content }}</p>-->
+<!--      <div class="post-footer">-->
+<!--        <p (click)="likePost(post)">Like {{ post.likes }}</p>-->
+<!--        <p (click)="dislikePost(post)">Dislike {{ post.dislikes }}</p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <div class="post">
+      <h2>Post title</h2>
+      <p>Post content</p>
+      <div class="post-footer">
+        <p>Like</p>
+        <p>Dislike</p>
+      </div>
+    </div>
+    <div class="post">
+      <h2>Post title</h2>
+      <p>Post content</p>
+      <div class="post-footer">
+        <p>Like</p>
+        <p>Dislike</p>
+      </div>
+    </div>
+  </div>
+</div>
