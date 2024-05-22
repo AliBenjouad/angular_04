@@ -29,4 +29,4 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB;
+module.exports = connectDB; // Export the function to be used in the server.js file.

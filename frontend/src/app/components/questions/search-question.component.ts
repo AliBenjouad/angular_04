@@ -8,25 +8,27 @@ import { QuestionService } from '../../services/question.service';
   styleUrls: ['./search-question.component.css']
 })
 export class SearchQuestionComponent {
-  searchForm: FormGroup;
-  results: any[] = [];
+  searchForm: FormGroup; // Declaring a FormGroup variable to handle form data
+  results: any[] = []; // Array to store search results
 
   constructor(private fb: FormBuilder, private questionService: QuestionService) {
+    // Initializing the form with FormBuilder
     this.searchForm = this.fb.group({
-      title: ['', Validators.required]
+      title: ['', Validators.required] // Defining a form control for question title with validation
     });
   }
 
   onSubmit() {
-    if (this.searchForm.valid) {
-      const { title } = this.searchForm.value;
-      this.questionService.searchQuestions(title).subscribe(
+    // Handling form submission
+    if (this.searchForm.valid) { // Checking if the form is valid
+      const { title } = this.searchForm.value; // Extracting form value
+      this.questionService.searchQuestions(title).subscribe( // Calling a service method to search questions
         (res: any) => {
-          this.results = res;
-          console.log('Questions found:', res);
+          this.results = res; // Storing search results
+          console.log('Questions found:', res); // Logging found questions
         },
         (err: any) => {
-          console.error('Error searching questions:', err);
+          console.error('Error searching questions:', err); // Logging error message if searching questions fails
         }
       );
     }

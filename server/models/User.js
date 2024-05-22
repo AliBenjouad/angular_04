@@ -26,8 +26,10 @@ const UserSchema = mongoose.Schema({
   }
 });
 
+// Export the User model
 const User = module.exports = mongoose.model('User', UserSchema);
 
+// Export the User model functions
 module.exports.getUserById = function(id, callback) {
   User.findById(id, callback);
 };
