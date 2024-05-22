@@ -1,10 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
-const mongoose = require('mongoose');
 const logger = require('./utils/logger');
-const config = require('./config/database');
+const connectDB = require('./config/database');
 
 const app = express();
 
@@ -13,12 +13,7 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
 require('./config/passport')(passport);
 
-mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => logger.info('Connected to database ' + config.database))
-  .catch(err => {
-    logger.error('Database connection error:', err);
-    process.exit(1);
-  });
+connectDB().then(r => logger.info('MongoDB connected successfully.'));
 
 const users = require('./routes/users');
 const questions = require('./routes/questions');

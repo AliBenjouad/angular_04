@@ -29,9 +29,4 @@ const connectDB = async () => {
   }
 };
 
-// module.exports = connectDB;
-
-module.exports = {
-  database: process.env.MONGODB_URI,
-  secret: 'root'
-};
+module.exports = connectDB;

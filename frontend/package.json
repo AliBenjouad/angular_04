@@ -8,7 +8,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "ngrok": "ngrok http 4200"
-
   },
   "dependencies": {
     "@angular/animations": "16.2.12",
@@ -25,6 +24,8 @@
     "bootstrap": "^5.3.3",
     "classlist.js": "^1.1.20150312",
     "core-js": "^3.37.1",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.6.2",
     "rxjs": "^7.8.0",
     "web-animations-js": "^2.3.2",
     "zone.js": "~0.13.0"
