@@ -35,4 +35,4 @@ You can navigate to:
 
 Nothing is backend related in the frontend. The backend is in the server folder.
 
-I strongly recommend to use the pdf file in server/ to see the tests of the backend.
+I strongly recommend to use the pdf file in doc/ to see the tests of the backend.
